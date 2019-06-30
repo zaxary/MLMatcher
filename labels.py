@@ -27,7 +27,11 @@ for label in recresp2['Labels']:
 else:
     print(myList2)
 length = len(myList)
+length2 = len(myList2)
+if length > length2:
+    length = length2;
+else:
+    length2 = length;
 for i in range(length - 1):
-    if((myList[i]) != myList2[i]):
+    if myList[i] != myList2[i]:
         print("After the disaster there was the loss of " + myList[i])
-
